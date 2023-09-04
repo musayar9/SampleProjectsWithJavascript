@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Alarm Clock</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Alarm Timer</h1>
+      <div class="alarm-form">
+        <input type="time" id="alarmTime" required />
+        <input
+          type="text"
+          id="alarmMessage"
+          placeholder="Enter Alarm Message"
+        />
+        <audio src="/mp3/ıphoneAlarm.mp3" id="audio"></audio>
+        <div class="control">
+                <button id="setAlarmBtn" class="showSetAlarm">Set Alarm</button>
+        <button id="stopBtn" class="stopBtn">Stop</button>
+        </div>
+
+      </div>
+      <div class="alarm-info">
+        <p id="alarmStatus">No alarm set</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

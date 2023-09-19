@@ -1,0 +1,99 @@
+:root{
+    --clr-primary: #007bff;
+    --clr-secondary: #0d417e;
+    --clr-container-bg: #cecece;
+    --clr-btn-bg: rgb(0, 122, 209);
+    --clr-btn-hover-bg: rgba(0,175,255,1);
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--clr-secondary);
+    position: relative;
+}
+
+
+
+.container{
+    height: 400px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--clr-container-bg);
+    border: 10px solid var(--clr-primary);
+    border-radius: 12px;
+}
+
+
+.title{
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    
+}
+
+.converter{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 1rem;
+    width: 80%;
+}
+
+.input-group{
+    margin-bottom: 1rem;
+}
+
+.input-group:nth-child(1),
+#convertBtn{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+label{
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input, select{
+    font-size: 1;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 8px;
+}
+
+button{
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--clr-btn-bg);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 5px 5px 2px rgb(156, 184, 197);
+    
+}
+button:hover{
+    background-color: var(--clr-btn-hover-bg);
+}
+
+button:active{
+    transform: translateY(5px);
+}
+
+.result{
+    font-size: 1.2rem;
+}

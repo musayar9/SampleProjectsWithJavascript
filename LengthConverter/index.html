@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Length Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Length Conveerter</h1>
+      <div class="converter">
+        <div class="input-group">
+          <label
+            for="amount">Length</label
+          >
+          <input type="number" name="amount" id="amount" placeholder="Enter Length" min="0" step="0.01" required/>
+        </div>
+        <div class="input-group">
+          <label for="baseLength">Base Len</label>
+          <select name="baseLength" id="baseLength">
+            <option value="km">km</option>
+            <option value="m">m</option>
+            <option value="cm">cm</option>
+            <option value="mm">mm</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="targetLength">Target Len</label>
+          <select name="targetLength" id="targetLength">
+            <option value="km">km</option>
+            <option value="m">m</option>
+            <option value="cm">cm</option>
+            <option value="mm">mm</option>
+          </select>
+        </div>
+        <button id="convertBtn">Convert</button>
+      </div>
+      <div class="result">
+        <p id="conversionResult"></p>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
